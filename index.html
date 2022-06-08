@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista multiple con fotos</title>
+	<meta charset="UTF-8">
+</head>
+<style>
+body{
+	padding:45%;
+	
+}
+</style>
+<body>
+<select multiple id="paises" onclick="pulsar()">
+		<option value="Imagen1" >Imagen 1
+		<option value="Imagen2">Imagen 2
+		<option value="Imagen3">Imagen 3
+		<option value="Imagen4">Imagen 4
+</select>
+<div id="capa"></div>
+
+<script>
+
+function pulsar()
+{
+
+if(document.getElementById("paises").value == "Imagen1")
+		{
+
+	
+	capa.innerHTML = "<img src='https://picsum.photos/200/300?grayscale' />"
+		}
+if(document.getElementById("paises").value == "Imagen2")
+		{
+
+	
+	capa.innerHTML = "<img src='https://picsum.photos/200/301?grayscale' />"
+}		
+if(document.getElementById("paises").value == "Imagen3")
+		{
+
+	
+	capa.innerHTML = "<img src='https://picsum.photos/200/303?grayscaler' />"
+		}
+if(document.getElementById("paises").value == "Imagen4")
+		{
+
+	
+	capa.innerHTML = "<img src='https://picsum.photos/200/304?grayscale' />"
+		}
+}
+</script>
+</body>
+</html>
+
+
+
+
